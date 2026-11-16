@@ -1,0 +1,38 @@
+# Proyecto de poblaciones estelares en la galaxia
+
+Desarrollado por: Gabriel Rodríguez Suárez.
+
+Utilizando los conocimientos en algoritmos de máquina no supervisado, como
+el de Gaussian Mixture Models, se realizó un estudio a dos poblaciones 
+estelares de la galaxia:
+
+- Lower Centaurus-Crux (LCC)
+- TW Hydrae
+
+El propósito de este proyecto fue calcular la edad cinemática aproximada de
+las estrellas, primero haciendo un query al servicio de SIMBAD el cual
+contiene ya las estrellas catalogadas en sus respectivas asociaciones y con
+base en estos datos hacer un cross-match con la base de datos de Gaia (en
+su DR3) para poder encontrar miembros potenciales y determinar bajo la 
+aproximación cinemática del Movimiento Rectilíneo Uniforme la edad media
+del cúmulo.
+
+Las poblaciones estelares aquí reunidas tienen edades menores a 20 Myr según
+los estudios realizados por otros astrónomos, esto para que bajo la
+aproximación cinemática de MRU sea más fácil determinar el momento en que
+las estrellas de las asociaciones estuvieron más juntas.
+
+El notebook new_pob_estelares.ipynb es el notebook que contiene la información
+actualizada y revisada, mientras que el otro archivo es simplemente un
+borrador que se prestó para ir haciendo el trabajo.
+
+Además, los archivos .fits y .vot que hay dentro del repositorio son los
+querys realizados a las bases de datos de Simbad y Gaia con los datos
+guardados para evitar realizar muchos queries y en caso tal tener lista
+la información guradada para evitar inconvenientes.
+
+PD:
+
+La tercera asociación por error del investigador no pudo ser obtenida debido
+a que al momento de pedirla los servidores de Gaia se cayeron, lo cual no es
+excusa pero cabe mencionar de que los tres query a Simbad fueron realizados.
